@@ -10501,3 +10501,12 @@ section#contact form#contactForm :-ms-input-placeholder {
 .sombra{
     text-shadow: 2px 2px 2px black;
 }
+#cuenta{
+  text-shadow: 2px 2px 2px black;
+  font-size: 1rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+    margin: 0px 0px 0px;
+}
+
