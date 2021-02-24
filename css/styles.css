@@ -33,6 +33,9 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --nav: #212529;
+  --colorgeneral:#fed136;
+  --colorhover:#e6b301;
+  --colorletra:#fff;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -158,14 +161,14 @@ sub {
 sup {
   top: -0.5em;
 }
-
+/* Anclas de toda la página -------------------------------------- */
 a {
-  color: #fed136;
+  color: var(--colorgeneral);
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #e6b301;
+  color: var(--colorhover);
   text-decoration: underline;
 }
 
@@ -358,7 +361,7 @@ template {
 [hidden] {
   display: none !important;
 }
-
+/* titulos y subtitulos ---------------------------------*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
@@ -2439,8 +2442,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: var(--colorgeneral);
+  border-color: var(--colorgeneral);
 }
 .btn-primary:hover {
   color: #fff;
@@ -10018,12 +10021,12 @@ p {
   }
 }
 ::-moz-selection {
-  background: #fed136;
+  background: var(--colorgeneral);
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: var(--colorgeneral);
   text-shadow: none;
 }
 
@@ -10065,14 +10068,14 @@ img::-moz-selection {
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.75rem;
-  color: #fff;
+  font-size: 1em;
+  color: var(--colorletra);
   text-transform: uppercase;
-  background-color: #fed136;
+  /* background-color: var(--colorgeneral); */
   border: 0;
 }
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: var(--colorgeneral);
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   letter-spacing: 0.0625em;
@@ -10084,11 +10087,11 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #fff;
+  color: var(--colorletra);
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: var(--colorgeneral);
 }
 
 @media (min-width: 992px) {
@@ -10110,7 +10113,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: var(--nav);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -10309,10 +10312,10 @@ header.masthead .masthead-heading {
   height: 80px;
   margin-left: 0;
   text-align: center;
-  color: white;
+  color: var(--colorletra);
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: var(--colorgeneral);
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
@@ -10497,7 +10500,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .casar{
-  color: rgb(196, 196, 15) !important;
+  color: var(--colorgeneral) !important;
   letter-spacing: 5px;
 }
 .sombra{
@@ -10506,9 +10509,15 @@ section#contact form#contactForm :-ms-input-placeholder {
 #cuenta{
   text-shadow: 2px 2px 2px black;
   font-size: 1rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-    margin: 0px 0px 0px;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+  margin: 0px 0px 0px;
+}
+.nombreevento {
+  font-size: 5.25rem;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: 'Caveat', cursive;
 }
 
