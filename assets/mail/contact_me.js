@@ -9,6 +9,8 @@ $(function () {
         submitSuccess: function ($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
+            var assistance = $("select#assistance").val();
+            var pass = $("input#pass").val();
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
@@ -24,6 +26,8 @@ $(function () {
                 url: "/assets/mail/contact_me.php",
                 type: "POST",
                 data: {
+                    assistance: assistance,
+                    pass: pass,
                     name: name,
                     phone: phone,
                     email: email,
@@ -39,7 +43,7 @@ $(function () {
                         )
                         .append("</button>");
                     $("#success > .alert-success").append(
-                        "<strong>Your message has been sent. </strong>"
+                        "<strong>Su confirmación ha sido enviada. </strong>"
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields
@@ -57,7 +61,7 @@ $(function () {
                         $("<strong>").text(
                             "Sorry " +
                                 firstName +
-                                ", it seems that my mail server is not responding. Please try again later!"
+                                ", El servidor no responde, por favor intertar más tarde!"
                         )
                     );
                     $("#success > .alert-danger").append("</div>");
