@@ -48,7 +48,7 @@ jQuery(document).ready(function() {
 	    Navigation
 	*/
 	$('a.scroll-link').on('click', function(e) {
-		e.preventDefault();
+		
 		scroll_to($(this), 0);
 	});
 	
